@@ -1,0 +1,71 @@
+Acertos: 10 de 10
+(100%)
+Toque para expandir e conferir as respostas.
+Questão 1.
+
+O que o comando git clone faz?
+Sua resposta
+Copia um repositório remoto para o computador
+
+
+Questão 2.
+
+Qual comando adiciona um arquivo para a área de stage?
+Sua resposta
+git add
+
+
+Questão 3.
+
+Qual comando cria um commit no Git?
+Sua resposta
+git commit -m "mensagem"
+
+
+Questão 4.
+
+O que git status faz?
+Sua resposta
+Mostra o estado atual do repositório
+
+
+Questão 5.
+
+O que acontece ao rodar git push origin main?
+Sua resposta
+Envia as mudanças do branch main para o repositório remoto
+
+
+Questão 6.
+
+Como visualizar o histórico de commits?
+Sua resposta
+git log
+
+
+Questão 7.
+
+O que git stash faz?
+Sua resposta
+Salva temporariamente mudanças não commitadas
+
+
+Questão 8.
+
+O que é o GitHub?
+Sua resposta
+Um serviço de hospedagem de repositórios Git
+
+
+Questão 9.
+
+O que é o Git?
+Sua resposta
+Um sistema de controle de versão distribuído
+
+
+Questão 10.
+
+Qual comando é usado para criar um novo repositório Git?
+Sua resposta
+git init
