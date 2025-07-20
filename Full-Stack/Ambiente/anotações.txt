@@ -1,0 +1,14 @@
+Ferramentas Usadas:
+
+Figma
+TLDRAW
+frontediter
+whimsical
+Notion 
+Obsidian 
+Terminal
+
+O MDN e o DevDocs são ferramentas essenciais para aprender programação. 
+O MDN oferece documentação detalhada em inglês, com a opção de mudar para português do Brasil. 
+Já o DevDocs reúne documentações de diversas tecnologias, permitindo personalização da interface e funcionamento offline. É importante não deixar o inglês ser um obstáculo, pois o aprendizado de programação pode melhorar suas habilidades no idioma.
+

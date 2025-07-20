@@ -1,12 +1,12 @@
 # Rocketseat
 
-Todas as minhas aulas da Rocketseat
+Todas as minhas aulas da Rocketseat do curso: Full-Stack
 
 # Nome do Projeto (Full Stack)
 
 ## 🚀 Descrição
 
-Projeto desenvolvido durante o curso Full Stack da Rocketseat (180h), com foco em [tema do projeto].  
+Projeto em desenvolvimento durante o curso Full Stack da Rocketseat (180h), com foco em aprender programação e ter uma base sólida.  
 Este repositório demonstra o uso de tecnologias modernas de front-end e back-end com práticas reais de mercado.
 
 ## 📚 Conteúdo aplicado
@@ -35,19 +35,3 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 - [ ] Docker
 - [ ] React
 - [ ] Git/GitHub
-
-## 🔧 Como rodar o projeto localmente
-
-```bash
-# Clone o repositório
-git clone https://github.com/seuusuario/nome-do-repo.git
-
-# Entre na pasta
-cd nome-do-repo
-
-# Instale as dependências
-npm install
-
-# Inicie o projeto
-npm run dev
-```
