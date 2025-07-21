@@ -2,7 +2,7 @@
 
 Todas as minhas aulas da Rocketseat do curso: Full-Stack
 
-# Nome do Projeto (Full Stack)
+# Full Stack
 
 ## 🚀 Descrição
 
@@ -35,3 +35,9 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 - [ ] Docker
 - [ ] React
 - [ ] Git/GitHub
+
+## Projeto de Receita: Figma com Style Guide -> https://www.figma.com/community/file/1360315130061454535/pagina-de-receita
+
+### HTML e CSS
+
+![Projeto de Receita - Rocketseat](image-1.png)
