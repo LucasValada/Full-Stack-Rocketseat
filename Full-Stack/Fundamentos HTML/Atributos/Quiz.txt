@@ -1,0 +1,35 @@
+100% 
+
+Questão 1
+
+O que são atributos em HTML?
+Sua resposta
+Informações adicionais sobre tags
+
+
+Questão 2
+
+O que o atributo "class" faz em HTML?
+Sua resposta
+Adiciona uma classe a tag
+
+
+Questão 3
+
+O que são atributos booleanos em HTML?
+Sua resposta
+Atributos que aceitam apenas valores booleanos (true/false)
+
+
+Questão 4
+
+O que são atributos globais em HTML?
+Sua resposta
+Atributos que podem ser usados em qualquer elemento HTML
+
+
+Questão 5
+
+Como você define uma classe em um elemento HTML?
+Sua resposta
+<div class="minha-classe">
