@@ -1,0 +1,28 @@
+100% 
+
+Questão 1
+
+O que significa a sigla HTML?
+Sua resposta
+Hyper Text Markup Language
+
+
+Questão 2
+
+Como você adiciona um comentário em HTML?
+Sua resposta
+<!-- Este é um comentário -→
+
+
+Questão 3
+
+O que é o fluxo HTML?
+Sua resposta
+A ordem em que as tags são processadas e exibidas
+
+
+Questão 4
+
+Quais são os caracteres reservados em HTML?
+Sua resposta
+& e <
