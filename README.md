@@ -36,6 +36,6 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 - [ ] React
 - [ ] Git/GitHub
 
-# Projeto de Receita: figma -> https://www.figma.com/community/file/1360315130061454535/pagina-de-receita
+# Projeto de Receita: Figma com Style Guide -> https://www.figma.com/community/file/1360315130061454535/pagina-de-receita
 
 ![Projeto de Receita - Rocketseat](image-1.png)
