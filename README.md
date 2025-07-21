@@ -2,7 +2,7 @@
 
 Todas as minhas aulas da Rocketseat do curso: Full-Stack
 
-# Nome do Projeto (Full Stack)
+# Full Stack Origamid
 
 ## 🚀 Descrição
 
@@ -35,3 +35,5 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 - [ ] Docker
 - [ ] React
 - [ ] Git/GitHub
+
+![Projeto de Receita - Rocketseat](image.png)
