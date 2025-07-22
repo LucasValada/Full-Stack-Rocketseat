@@ -42,6 +42,4 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 
 ![Projeto de Receita - Rocketseat](ReceitaPagina.png)
 
-## Local Turístico - Full Stack Rocketseat: Figma com Style Guide -> https://www.figma.com/community/file/1384542229391733447/local-turistico
-
-![Local Turístico - Full Stack Rocketseat](LocalTuristico.png)
+## Local Turístico - https://github.com/LucasValada/Projeto-Local-Turistico
