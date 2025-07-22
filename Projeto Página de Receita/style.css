@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+.conteudo {
+  background-image: url(./bg-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 10px;
+  background-color: #573824;
+  font-family: "Alice", serif;
+}
+.card-conteudo {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 800px;
+  height: auto;
+  background-color: #f0e8c2;
+}
+.informacoes {
+  padding: 20px;
+  font-weight: regular;
+  h1 {
+    font-size: 40px;
+    line-height: 140%;
+    color: #291b1a;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 150%;
+  }
+  p,
+  ul > li {
+    font-size: 16px;
+    line-height: 150%;
+    color: #573a37;
+  }
+}
+.rodape {
+  text-align: center;
+  color: #f0e8c2;
+}
