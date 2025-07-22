@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  background-color: #f5f4f0;
+}
+.size-content {
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+}
+.titles-content {
+  .orange-text {
+    color: #e95e10;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .principal-text {
+    color: #1b1b1b;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  padding-bottom: 40px;
+}
+.subtitle-topic {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#divider {
+  width: 100%;
+  height: 1px;
+  background-color: #8a8989;
+  margin: 40px 0;
+}
+
+.imgAndContent {
+  .subtext-grey {
+    color: #333333;
+    text-align: center;
+    font-size: 16px;
+  }
+  .left {
+    padding-left: 40px;
+  }
+  img {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .list-content,
+  .contents-topics {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  ol,
+  ul {
+    padding-left: 0;
+  }
+
+  .list-tag {
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .space {
+    margin-left: 24px;
+    list-style: disc;
+  }
+  .tag {
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #0c51a7;
+  }
+  .list-content-tags {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+  [title="casais"] {
+    color: #591b98;
+  }
+  [title="familia"] {
+    color: #e5245e;
+  }
+  [title="orcamento"] {
+    color: #e95e10;
+  }
+}
+.titles-content-footer {
+  text-align: center;
+  font-weight: regular;
+  color: #333333;
+  h3 {
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}

@@ -26,6 +26,7 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 
 ## 💻 Tecnologias utilizadas
 
+- [x] Git/GitHub
 - [ ] HTML5
 - [ ] CSS3 / Tailwind (se usado)
 - [ ] JavaScript
@@ -34,10 +35,13 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 - [ ] Express
 - [ ] Docker
 - [ ] React
-- [ ] Git/GitHub
 
 ## Projeto de Receita: Figma com Style Guide -> https://www.figma.com/community/file/1360315130061454535/pagina-de-receita
 
 ### HTML e CSS
 
-![Projeto de Receita - Rocketseat](image-1.png)
+![Projeto de Receita - Rocketseat](ReceitaPagina.png)
+
+## Local Turístico - Full Stack Rocketseat: Figma com Style Guide -> https://www.figma.com/community/file/1384542229391733447/local-turistico
+
+![Local Turístico - Full Stack Rocketseat](LocalTuristico.png)
