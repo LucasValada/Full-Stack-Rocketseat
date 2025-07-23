@@ -36,10 +36,8 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 - [ ] Docker
 - [ ] React
 
-## Projeto de Receita: Figma com Style Guide -> https://www.figma.com/community/file/1360315130061454535/pagina-de-receita
+### HTML e CSS:
 
-### HTML e CSS
-
-![Projeto de Receita - Rocketseat](ReceitaPagina.png)
+## Projeto de Receita - https://github.com/LucasValada/Projeto-de-Receita
 
 ## Local Turístico - https://github.com/LucasValada/Projeto-Local-Turistico
