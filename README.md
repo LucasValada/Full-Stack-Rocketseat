@@ -27,8 +27,8 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 ## 💻 Tecnologias utilizadas
 
 - [x] Git/GitHub
-- [ ] HTML5
-- [ ] CSS3 / Tailwind (se usado)
+- [x] HTML5
+- [x] CSS3 / Tailwind
 - [ ] JavaScript
 - [ ] TypeScript
 - [ ] Node.js
@@ -41,3 +41,5 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 ## Projeto de Receita - https://github.com/LucasValada/Projeto-de-Receita
 
 ## Local Turístico - https://github.com/LucasValada/Projeto-Local-Turistico
+
+## Portal de Noticias - https://github.com/LucasValada/Tech-News
