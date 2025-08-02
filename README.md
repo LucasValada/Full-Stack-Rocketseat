@@ -27,8 +27,8 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 ## 💻 Tecnologias utilizadas
 
 - [x] Git/GitHub
-- [ ] HTML5
-- [ ] CSS3 / Tailwind (se usado)
+- [x] HTML5
+- [x] CSS3 / Tailwind
 - [ ] JavaScript
 - [ ] TypeScript
 - [ ] Node.js
@@ -36,12 +36,14 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 - [ ] Docker
 - [ ] React
 
-## Projeto de Receita: Figma com Style Guide -> https://www.figma.com/community/file/1360315130061454535/pagina-de-receita
+### HTML e CSS:
 
-### HTML e CSS
+## Projeto de Receita - https://github.com/LucasValada/Projeto-de-Receita
 
-![Projeto de Receita - Rocketseat](ReceitaPagina.png)
+## Local Turístico - https://github.com/LucasValada/Projeto-Local-Turistico
 
-## Local Turístico - Full Stack Rocketseat: Figma com Style Guide -> https://www.figma.com/community/file/1384542229391733447/local-turistico
+## Portal de Noticias - https://github.com/LucasValada/Tech-News
 
-![Local Turístico - Full Stack Rocketseat](LocalTuristico.png)
+## Landing Page de Produtos - https://github.com/LucasValada/LP-Produtos
+
+## Landing Page de Patins Animados - com foco em animation CSS - https://github.com/LucasValada/LP-Patins-Animado
