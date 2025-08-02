@@ -11,8 +11,6 @@ Este repositório demonstra o uso de tecnologias modernas de front-end e back-en
 
 ## 📚 Conteúdo aplicado
 
-https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_link
-
 - Versionamento com Git e GitHub
 - HTML e CSS (semântico e responsivo)
 - JavaScript moderno (ES6+)
