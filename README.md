@@ -43,3 +43,7 @@ https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_li
 ## Local Turístico - https://github.com/LucasValada/Projeto-Local-Turistico
 
 ## Portal de Noticias - https://github.com/LucasValada/Tech-News
+
+## Landing Page de Produtos - https://github.com/LucasValada/LP-Produtos
+
+## Landing Page de Patins Animados - com foco em animation CSS - https://github.com/LucasValada/LP-Patins-Animado
