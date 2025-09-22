@@ -94,7 +94,9 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-
+.hide {
+  display: none;
+}
 @media (max-width: 420px) {
   form {
     flex-direction: column;
