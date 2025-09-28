@@ -6,7 +6,7 @@ const guestName = document.createElement("span");
 // guestName.textContent = "Maria";
 //append adiciona um elemento filho dentro do elemento pai APÓS
 const newName = document.createElement("span");
-newName.textContent = "Antonia";
+newName.textContent = "Antonia Create Elements";
 newGuest.append(guestName);
 // Adiciona um elemento filho dentro do elemento pai ANTES (com prioridade)
 newGuest.prepend(newName);
