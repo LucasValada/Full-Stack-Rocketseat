@@ -1,4 +1,4 @@
-const input = document.querySelector("input");
+// const input = document.querySelector("input");
 // input.addEventListener("input", (event) => {
 //   const regex = /\D+/g;
 //   const value = input.value;
@@ -11,16 +11,16 @@ const input = document.querySelector("input");
 //   //   console.log(isValid);
 // });
 
-const form = document.querySelector("form");
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const value = input.value;
-  const regex = /\D+/g;
-  if (regex.test(value)) {
-    alert("Padrão encontrado");
-  } else {
-    alert("Padrão não encontrado");
-  }
-  //   const value = input.value.replace(regex, "");
-  //   console.log(value);
-});
+// const form = document.querySelector("form");
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const value = input.value;
+//   const regex = /\D+/g;
+//   if (regex.test(value)) {
+//     alert("Padrão encontrado");
+//   } else {
+//     alert("Padrão não encontrado");
+//   }
+//   //   const value = input.value.replace(regex, "");
+//   //   console.log(value);
+// });
