@@ -9,7 +9,7 @@ const guest = document.getElementById("guest-2");
 console.log("ID Selector", guest);
 // Mostra as propriedades do objeto.
 console.dir(guest);
-// Acessar elemtno pelo class (seletor class).
+// Acessar elemento pelo class (seletor class).
 const guestsByClass = document.getElementsByClassName("guest");
 console.log("Class Selector", guestsByClass);
 
