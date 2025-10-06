@@ -56,3 +56,34 @@ console.log(product.name);
 // notação de colchetes
 product["quantity"] = 2;
 console.log(product["quantity"]);
+
+// encadeamento opcional
+/*
+    OPTIONAL CHAINING (?.) - encadeamento opcional 
+    Se a propriedade ou função chamada é nullish (null ou undefined),
+    a expressão retorna undefined em vez de gerar um erro.
+
+    Útil ao explorar o conteúdo de um objeto quando não existe garantia
+    de existência de determinadas propriedades obrigatórias.
+
+*/
+
+const person = {
+  id: 1,
+  name: "Lucas",
+  //   address: {
+  //     street: "Rua X",
+  //     number: 123,
+  //     city: "Sao Paulo",
+  //     geo: {
+  //       latitude: 40120.123,
+  //       longitude: 123123.123,
+  //     },
+  //     postal_code: "12345-000",
+  //   },
+  message: function () {
+    console.log(`${this.name} mora na ${this?.addres?.street}`);
+  },
+};
+
+person.message?.();
