@@ -43,4 +43,16 @@ user.message();
 console.log(user["email"]);
 user["message"]();
 
-// Acessando propriedades no contexto do objeto
+// Atualizando um objeto
+const product = {
+  name: "teclado",
+  quantity: 100,
+};
+console.log(product.quantity);
+product.quantity = 90;
+console.log(product.quantity);
+product.name = "mouse";
+console.log(product.name);
+// notação de colchetes
+product["quantity"] = 2;
+console.log(product["quantity"]);
