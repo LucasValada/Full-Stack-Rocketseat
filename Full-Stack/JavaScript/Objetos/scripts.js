@@ -26,8 +26,19 @@ const user = {
     postal_code: "12345-000",
   },
   message: () => {
-    console.log("Olá, é bom ter você aqui!");
+    console.log(`Olá, é bom ter você ${user.name.firstName}!`);
   },
 };
 
 // Acessando propriedades e métodos usando a notação de ponto.
+console.log(user.email);
+console.log(user.name.firstName);
+// Acessando priopriedades aninhadas de objetos
+console.log(user.name.surname);
+
+user.message();
+
+// notação de colchetes
+console.log(user["email"]);
+user["message"]();
+
