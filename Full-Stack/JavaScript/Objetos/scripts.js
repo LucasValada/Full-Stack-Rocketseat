@@ -87,3 +87,22 @@ const person = {
 };
 
 person.message?.();
+
+// Operador de coalescência nula
+/* 
+    Operador Lógico de Coalesceção Nula
+    ?? - Se a esquerda for null ou undefined, retorna o valor da direita.
+    Útil ao explorar o conteúdo de um objeto quando nao existe garantia de existencia de determinadas propriedades obrigatórias.
+*/
+
+let content = null;
+console.log(content ?? "Conteudo nao encontrado");
+content = "Lucas";
+console.log(content ?? "Conteudo nao encontrado");
+
+const image = {
+  name: "julia",
+  picture: undefined,
+};
+
+console.log(image.picture ?? "Imagem nao encontrada");
