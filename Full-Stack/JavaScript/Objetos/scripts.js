@@ -25,8 +25,9 @@ const user = {
     city: "Sao Paulo",
     postal_code: "12345-000",
   },
-  message: () => {
+  message: function () {
     console.log(`Olá, é bom ter você ${user.name.firstName}!`);
+    console.log(`Olá ${this.name.surname}!`);
   },
 };
 
@@ -42,3 +43,4 @@ user.message();
 console.log(user["email"]);
 user["message"]();
 
+// Acessando propriedades no contexto do objeto
