@@ -106,3 +106,49 @@ const image = {
 };
 
 console.log(image.picture ?? "Imagem nao encontrada");
+
+// função construtora
+
+function createProduct(name) {
+  const productBuild = {};
+
+  productBuild.name = name;
+  productBuild.details = function () {
+    console.log(`O nome do produto é ${this.name}`);
+  };
+  return productBuild;
+}
+// uma instancia é uma (nova copia)/copia do objeto na memoria com o NEW
+const product1 = new createProduct("Teclado");
+console.log(product1.name);
+product1.details();
+
+const product2 = new createProduct("Mouse");
+console.log(product2.name);
+product2.details();
+// aproveitou a mesma estrutura, mas o objeto nao é o mesmo
+
+console.log(product1 === product2);
+// return false
+
+// Exemplos de funçoes construturas disponíveis no proprio JS
+// Math, String, Date
+let myName = new String("Lucas");
+console.log(myName);
+
+let price = "50.6".replace(".", ",");
+console.log(price);
+
+let date = new Date("2025-07-10");
+console.log(date);
+
+function newPerson(name) {
+  this.name = "Lucas";
+  this.message = function () {
+    console.log(`Ola ${this.name}`);
+  };
+}
+
+const person1 = new newPerson("Valads");
+console.log(person1.name);
+person1.message();
