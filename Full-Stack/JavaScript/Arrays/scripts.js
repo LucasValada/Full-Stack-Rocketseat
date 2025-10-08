@@ -30,3 +30,20 @@ console.log(fullName);
 console.log(fullName.split(" ")); // cria arrayusando o espaco como delimitador
 // Cria um array com as letras
 console.log(Array.from(fullName));
+
+// Adicionando e removendo um item ao array
+let users = [];
+console.log(users);
+
+// Adiciona com push um item ao final do array
+users.push("Lucas");
+users.push("Joao");
+users.push("Guilherme");
+// Adiciona com push um item ao começo do array
+users.unshift("Ana");
+// Remover um item do inicio do array
+users.shift();
+// Remover o ultimo item do array
+users.pop();
+
+console.log(users);
