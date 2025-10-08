@@ -23,3 +23,10 @@ console.log(fruits[7]);
 
 // Acessando de forma dinamica o ultimo item
 console.log(fruits[fruits.length - 1]);
+
+// Convertendo uma string para array
+let fullName = "Lucas Valadão Bispo";
+console.log(fullName);
+console.log(fullName.split(" ")); // cria arrayusando o espaco como delimitador
+// Cria um array com as letras
+console.log(Array.from(fullName));
