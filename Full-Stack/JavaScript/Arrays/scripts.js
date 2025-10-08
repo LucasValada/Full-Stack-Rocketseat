@@ -59,3 +59,29 @@ console.log(position);
 newFruits.splice(1, 3); //start x quantidade
 newFruits.splice(position, 1); // remover um item pela posiçao do indice
 console.log(newFruits);
+
+// Elementos que o array aceita
+let myArray = [
+  "Um texto",
+  10,
+  true,
+  function () {
+    console.log("função dentro do array");
+  },
+  {
+    name: "Lucas",
+    age: 23,
+  },
+];
+//Texto
+console.log(myArray[0]);
+// Numero
+console.log(myArray[1]);
+// Boolean
+console.log(myArray[2]);
+// Funcao
+myArray[3]();
+// Objeto
+console.log(myArray[4]);
+console.log(myArray[4].name);
+console.log(myArray[4].age);
