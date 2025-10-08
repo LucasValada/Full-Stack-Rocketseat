@@ -47,3 +47,15 @@ users.shift();
 users.pop();
 
 console.log(users);
+
+// Usando o indice
+let newFruits = ["Banana", "Apple", "Lemon", "Watermelon"];
+// console.log(newFruits);
+// encontra e retorna o indice do elemento no array
+let position = newFruits.indexOf("Watermelon");
+console.log(position);
+// quando nao encontra, ele retorna -1
+// deletar a partir de um indice ou indices especificos do array
+newFruits.splice(1, 3); //start x quantidade
+newFruits.splice(position, 1); // remover um item pela posiçao do indice
+console.log(newFruits);
