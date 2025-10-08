@@ -85,3 +85,8 @@ myArray[3]();
 console.log(myArray[4]);
 console.log(myArray[4].name);
 console.log(myArray[4].age);
+
+// Verificando se existe um conteudo no array
+let items = ["Banana", "Apple", "Lemon", "Watermelon"];
+console.log(items.includes("Apple"));
+console.log(items.includes("Kiwi"));
