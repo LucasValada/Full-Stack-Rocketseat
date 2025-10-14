@@ -71,14 +71,19 @@ function expenseAdd(newExpense) {
     const expenseCategory = document.createElement("span");
     expenseCategory.textContent = newExpense.category_name; // Define o texto da categoria
 
+    // Cria o botão de remover a despesa
+    const expenseRemove = document.createElement("img");
+    expenseRemove.setAttribute("src", "img/remove.svg");
+    expenseRemove.setAttribute("alt", "Remover despesa");
+
     // Adiciona as classes CSS
     expenseIcon.classList.add("expense-icon");
     expenseInfo.classList.add("expense-info");
     expenseItem.classList.add("expense");
     expenseAmount.classList.add("expense-amount");
-
+    expenseRemove.classList.add("remove-icon");
     // Adiciona as informações no item.
-    expenseItem.append(expenseIcon, expenseInfo, expenseAmount);
+    expenseItem.append(expenseIcon, expenseInfo, expenseAmount, expenseRemove);
     // Adiciona o item na lista
     expenseList.append(expenseItem);
     // Adiciona as informações da despesa na div de informação
