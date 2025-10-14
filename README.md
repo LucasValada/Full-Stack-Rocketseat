@@ -1,17 +1,12 @@
-# Rocketseat
-
+# Rocketseat Full Stack
 Todas as minhas aulas da Rocketseat do curso: Full-Stack
-
-# Full Stack
 
 ## 🚀 Descrição
 
-Projeto em desenvolvimento durante o curso Full Stack da Rocketseat (180h), com foco em aprender programação e ter uma base sólida.  
-Este repositório demonstra o uso de tecnologias modernas de front-end e back-end com práticas reais de mercado.
+Projetos em desenvolvimento durante o curso Full Stack da Rocketseat (180h), com foco em aprender programação e ter uma base sólida.  
+Este repositório demonstrará o uso de tecnologias modernas de front-end e back-end ao finalizar o curso, e o meu acompanhamento com stacks.
 
 ## 📚 Conteúdo aplicado
-
-https://www.notion.so/Full-Stack-236094895a2480129025ee49f61168a8?source=copy_link
 
 - Versionamento com Git e GitHub
 - HTML e CSS (semântico e responsivo)

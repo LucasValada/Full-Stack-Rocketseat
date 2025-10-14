@@ -15,12 +15,16 @@ class Dog extends Animal {
 }
 class Cat extends Animal {
   makeNoise() {
-    console.log("meow meow meow");
+    console.log(`${this.name} está miando: meow meow meow`);
+  }
+  run() {
+    console.log(`${this.name} está correndo`);
   }
 }
-const dog = new Dog("Benenge late:");
+const dog = new Dog("Benenge");
 console.log(dog.name);
 dog.makeNoise();
-const cat = new Cat("Rubinho mia:");
+const cat = new Cat("Binho");
 console.log(cat.name);
 cat.makeNoise();
+cat.run();
