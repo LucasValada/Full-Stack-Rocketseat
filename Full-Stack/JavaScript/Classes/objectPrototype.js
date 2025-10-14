@@ -1,4 +1,4 @@
-console.log("### Classes com Javascript || Objeto Prototype) ###");
+console.log("### Classes com Javascript || Objeto Prototype ###");
 const address = {
   city: "São Paulo",
   country: "Brasil",
