@@ -57,6 +57,12 @@ function expenseAdd(newExpense) {
     // Cria a descrição da despesa
     const expenseInfo = document.createElement("div"); // Cria o elemento div
 
+    // Cria o valor da despesa
+    const expenseAmount = document.createElement("span");
+    expenseAmount.textContent = newExpense.amount; // Define o texto do valor
+    expenseAmount.innerHTML = `<small>R$</small>${newExpense.amount
+      .toUpperCase()
+      .replace("R$", "")}`; // Formata o valor com R$ em um span separado
     // Cria o nome da despesa
     const expenseName = document.createElement("strong");
     expenseName.textContent = newExpense.expense; // Define o texto do nome da despesa
@@ -69,10 +75,11 @@ function expenseAdd(newExpense) {
     expenseIcon.classList.add("expense-icon");
     expenseInfo.classList.add("expense-info");
     expenseItem.classList.add("expense");
+    expenseAmount.classList.add("expense-amount");
 
     // Adiciona as informações no item.
-    expenseItem.append(expenseIcon, expenseInfo);
-    // Adiciona o item na lsita
+    expenseItem.append(expenseIcon, expenseInfo, expenseAmount);
+    // Adiciona o item na lista
     expenseList.append(expenseItem);
     // Adiciona as informações da despesa na div de informação
     expenseInfo.append(expenseName, expenseCategory);
