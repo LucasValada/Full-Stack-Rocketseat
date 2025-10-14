@@ -48,18 +48,34 @@ function expenseAdd(newExpense) {
   try {
     // Cria o elemento li para a nova despesa
     const expenseItem = document.createElement("li"); // Cria o elemento li
-    expenseItem.classList.add("expense"); // Adiciona a classe CSS
 
     // Cria o icone da categoria
     const expenseIcon = document.createElement("img"); // Cria o elemento img
     expenseIcon.setAttribute("src", `img/${newExpense.category_id}.svg`); // Define o src da imagem
     expenseIcon.setAttribute("alt", newExpense.category_name); // Define o alt da imagem
-    expenseIcon.classList.add("expense-icon"); // Adiciona a classe CSS
+
+    // Cria a descrição da despesa
+    const expenseInfo = document.createElement("div"); // Cria o elemento div
+
+    // Cria o nome da despesa
+    const expenseName = document.createElement("strong");
+    expenseName.textContent = newExpense.expense; // Define o texto do nome da despesa
+
+    // Cria a categoria da despesa
+    const expenseCategory = document.createElement("span");
+    expenseCategory.textContent = newExpense.category_name; // Define o texto da categoria
+
+    // Adiciona as classes CSS
+    expenseIcon.classList.add("expense-icon");
+    expenseInfo.classList.add("expense-info");
+    expenseItem.classList.add("expense");
 
     // Adiciona as informações no item.
-    expenseItem.append(expenseIcon);
+    expenseItem.append(expenseIcon, expenseInfo);
     // Adiciona o item na lsita
     expenseList.append(expenseItem);
+    // Adiciona as informações da despesa na div de informação
+    expenseInfo.append(expenseName, expenseCategory);
   } catch (error) {
     alert("Erro ao adicionar despesa: " + error.message);
   }
