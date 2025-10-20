@@ -14,5 +14,5 @@ export async function schedulesDay() {
   // Mostra os agendamentos do dia na tela
   scheduleShow({ dailySchedules });
   // Os horários disponiveis (horário futuro + não agendando) do lado esquerdo (form)
-  hoursLoad({ date });
+  hoursLoad({ date, dailySchedules });
 }
