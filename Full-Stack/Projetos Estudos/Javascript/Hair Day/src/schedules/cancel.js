@@ -19,7 +19,7 @@ periods.forEach((period) => {
         );
         if (isConfirm) {
           // Chama a função de cancelamento
-          await scheduleCancel(id);
+          await scheduleCancel({ id });
           // Recarrega os agendamentos do dia
           schedulesDay();
         }

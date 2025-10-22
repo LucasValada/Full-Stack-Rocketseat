@@ -2,13 +2,14 @@ import { apiConfig } from "./api-config";
 
 export async function scheduleNew({ id, name, when }) {
   try {
+    const idStg = id.toString();
     // Envia para a API o novo agendamento.
     await fetch(`${apiConfig.baseUrl}/schedules`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ id, name, when }),
+      body: JSON.stringify({ id: idStg, name, when }),
     });
     // exibe mensagem de sucesso
     alert("Agendamento criado com sucesso!");
