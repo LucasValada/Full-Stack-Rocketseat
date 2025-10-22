@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Mouse",
+      "price": 80
+    },
+    {
+      "id": "2",
+      "name": "Teclado",
+      "price": 800
+    },
+    {
+      "id": "3",
+      "name": "Monitor",
+      "price": 3000
+    },
+    {
+      "id": "1761111241280",
+      "name": "Mesa Gamer",
+      "price": "2000"
+    },
+    {
+      "id": "1761111254392",
+      "name": "Cadeira",
+      "price": "900"
+    }
+  ]
+}
