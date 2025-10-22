@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "babel main.js --out-dir ./dist"
+    "build": "babel main.js --out-dir ./dist",
+    "dev": "babel main.js --watch --out-dir ./dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
