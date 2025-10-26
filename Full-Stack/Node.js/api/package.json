@@ -1,0 +1,12 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lucas Valadão",
+  "license": "ISC",
+  "description": "Criando meu primeiro projeto com Node.js"
+}
