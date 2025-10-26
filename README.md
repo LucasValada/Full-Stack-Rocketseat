@@ -24,8 +24,8 @@ Este repositório demonstrará o uso de tecnologias modernas de front-end e back
 - [x] Git/GitHub
 - [x] HTML5
 - [x] CSS3 / Tailwind
-- [ ] JavaScript
-- [ ] TypeScript
+- [x] JavaScript
+- [x] TypeScript
 - [ ] Node.js
 - [ ] Express
 - [ ] Docker
