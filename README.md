@@ -1,4 +1,5 @@
 # Rocketseat Full Stack
+
 Todas as minhas aulas da Rocketseat do curso: Full-Stack
 
 ## 🚀 Descrição
@@ -42,3 +43,7 @@ Este repositório demonstrará o uso de tecnologias modernas de front-end e back
 ## Landing Page de Produtos - https://github.com/LucasValada/LP-Produtos
 
 ## Landing Page de Patins Animados - com foco em animation CSS - https://github.com/LucasValada/LP-Patins-Animado
+
+### JavaScript:
+
+## Lista de compras com JavaScript - https://github.com/LucasValada/Lista-de-compras/tree/develop
