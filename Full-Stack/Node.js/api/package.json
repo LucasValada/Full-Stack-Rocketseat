@@ -4,7 +4,7 @@
   "main": "./src/server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --watch ./src/server.js"
   },
   "keywords": [],
   "author": "Lucas Valadão",
