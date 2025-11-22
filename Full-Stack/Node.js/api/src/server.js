@@ -1,21 +1,19 @@
 import http from "node:http";
+import { jsonBodyHandler } from "./middlewares/jsonBodyHandler.js";
+const server = http.createServer(async (request, response) => {
+  const { method, url } = request;
 
-const server = http.createServer(async (req, res) => {
-  const { method, url } = req;
+  await jsonBodyHandler(request, response);
 
   if (method === "GET" && url === "/products") {
-    return res.end("Listagem de produtos");
+    return response.end("Listagem de produtos");
   }
   if (method === "POST" && url === "/products") {
-    const buffers = [];
-    for await (const chunk of req) {
-      buffers.push(chunk);
-    }
-    console.log(Buffer.concat(buffers).toString());
-
-    return res.writeHead(201).end("Produto cadastrado com sucesso");
+    return response.writeHead(201).end(JSON.stringify(request.body));
   }
-  return res.writeHead(404).end("Rota nao encontrada");
+
+  // Define o header de resposta como JSON.
+  return response.writeHead(404).end("Rota nao encontrada");
   // return res.end("Método HTTP: " + method);
 });
 
