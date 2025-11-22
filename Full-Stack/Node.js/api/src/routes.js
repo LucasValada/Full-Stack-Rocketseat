@@ -13,4 +13,11 @@ export const routes = [
       return response.writeHead(201).end(JSON.stringify(request.body));
     },
   },
+  {
+    method: "DELETE",
+    path: "/products/:id",
+    controller: (request, response) => {
+      return response.end("Produto removido com sucesso");
+    },
+  },
 ];
