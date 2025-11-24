@@ -5,7 +5,8 @@ export const routes = [
     method: "GET",
     path: "/products",
     controller: (request, response) => {
-      return response.end("Listagem de produtos");
+      console.log(request.query);
+      return response.end(JSON.stringify(request.query));
     },
   },
   {
