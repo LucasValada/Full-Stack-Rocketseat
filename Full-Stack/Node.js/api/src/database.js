@@ -1,34 +1,34 @@
 const DATABASE_PATH = new URL("db.json", import.meta.url);
 import fs from "node:fs/promises";
 export class Database {
-  database = {};
+  #database = {};
 
   constructor() {
     fs.readFile(DATABASE_PATH, "utf-8")
       .then((data) => {
-        this.database = JSON.parse(data);
+        this.#database = JSON.parse(data);
       })
       .catch(() => {
-        this.persist();
+        this.#persist();
       });
   }
-  persist() {
+  #persist() {
     // Lógica para persistir os dados em um arquivo ou banco de dados real
-    fs.writeFile(DATABASE_PATH, JSON.stringify(this.database));
+    fs.writeFile(DATABASE_PATH, JSON.stringify(this.#database));
   }
 
   insert(table, data) {
-    if (Array.isArray(this.database[table])) {
-      this.database[table].push(data);
+    if (Array.isArray(this.#database[table])) {
+      this.#database[table].push(data);
     } else {
-      this.database[table] = [data];
+      this.#database[table] = [data];
     }
 
-    this.persist();
+    this.#persist();
   }
 
   select(table) {
-    return this.database[table];
+    return this.#database[table] ?? []; // se não existir, retorna um array vazio
   }
 }
 /**
