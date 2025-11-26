@@ -4,7 +4,13 @@ export class Database {
   database = {};
 
   constructor() {
-    this.persist();
+    fs.readFile(DATABASE_PATH, "utf-8")
+      .then((data) => {
+        this.database = JSON.parse(data);
+      })
+      .catch(() => {
+        this.persist();
+      });
   }
   persist() {
     // Lógica para persistir os dados em um arquivo ou banco de dados real
