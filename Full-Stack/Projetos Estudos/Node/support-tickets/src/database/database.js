@@ -22,4 +22,9 @@ export class Database {
     }
     this.#persist();
   }
+
+  select(table) {
+    let data = this.#database[table] ?? [];
+    return data;
+  }
 }
