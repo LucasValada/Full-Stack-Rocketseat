@@ -5,7 +5,7 @@ export function routeHandler(request, response) {
     return route.method === request.method && route.path === request.url;
   });
   if (route) {
-    return route.controller(request, response);
+    return route.controller({request, response});
   }
 
   return response.writeHead(404).end();
