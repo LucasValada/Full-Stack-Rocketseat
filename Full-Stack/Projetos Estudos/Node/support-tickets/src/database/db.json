@@ -1,1 +1,22 @@
-{"tickets":[{"id":"b88d345d-ccc3-4e50-881e-31c2acb82806","equipment":"Computador","description":"Computador não liga","user_name":"Lucas Valadão","status":"open","created_at":"2025-12-04T17:41:21.068Z","updated_at":"2025-12-04T17:41:21.068Z"},{"id":"801e1af4-2b89-45e8-b07c-4aa17d37650c","equipment":"Teclado","description":"Teclado Gamer RGB","user_name":"Lucas Valadão","status":"open","created_at":"2025-12-04T18:40:07.877Z","updated_at":"2025-12-04T18:40:07.877Z"}]}
+{
+  "tickets": [
+    {
+      "id": "b88d345d-ccc3-4e50-881e-31c2acb82806",
+      "equipment": "Computador",
+      "description": "Computador não liga",
+      "user_name": "Lucas Valadão",
+      "status": "closed",
+      "created_at": "2025-12-04T17:41:21.068Z",
+      "updated_at": "2025-12-04T17:41:21.068Z"
+    },
+    {
+      "id": "801e1af4-2b89-45e8-b07c-4aa17d37650c",
+      "equipment": "Teclado",
+      "description": "Teclado Gamer RGB",
+      "user_name": "Lucas Valadão",
+      "status": "open",
+      "created_at": "2025-12-04T18:40:07.877Z",
+      "updated_at": "2025-12-04T18:40:07.877Z"
+    }
+  ]
+}
