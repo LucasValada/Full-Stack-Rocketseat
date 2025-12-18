@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2024" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "lib": ["ES2024"],
+    "module": "nodenext" /* Specify what module code is generated. */,
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  }
+}
