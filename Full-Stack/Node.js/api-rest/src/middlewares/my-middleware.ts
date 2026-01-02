@@ -4,6 +4,7 @@ export function myMiddleware(
   response: Response,
   next: NextFunction
 ) {
+  request.user_id = "123";
   console.log("myMiddleware");
   next();
 }
