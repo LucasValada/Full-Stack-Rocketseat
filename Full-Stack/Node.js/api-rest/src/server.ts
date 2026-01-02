@@ -1,11 +1,11 @@
-import express from "express";
+import express, { NextFunction, Request, Response } from "express";
+import { routes } from "./routes";
 const PORT = 3333;
 const app = express();
-
-app.get("/products", (request, response) => {
-  // /products?page=1&limit=10
-  const { page, limit } = request.query;
-  response.send(`pagina ${page} de ${limit}`);
+app.use(express.json());
+app.use(routes);
+app.use((error: any, request: Request, response: Response, _: NextFunction) => {
+  response.status(500).json({ error: error.message });
 });
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
