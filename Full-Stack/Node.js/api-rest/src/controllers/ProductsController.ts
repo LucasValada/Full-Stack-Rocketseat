@@ -19,11 +19,17 @@ export class ProductsController {
 
   create(request: Request, response: Response) {
     const bodySchema = z.object({
-      name: z.string(),
-      price: z.number(),
+      name: z
+        .string({ required_error: "name is required" })
+        .trim()
+        .min(6, { message: "Name must be 6 or more characters" }),
+      price: z
+        .number({ required_error: "price is required" })
+        .positive({ message: "Price must be positive" })
+        .gte(10),
     });
 
-    const {name, price} = bodySchema.parse(request.body)
+    const { name, price } = bodySchema.parse(request.body);
 
     response.status(201).json({ name, price, user_id: request.user_id });
   }
