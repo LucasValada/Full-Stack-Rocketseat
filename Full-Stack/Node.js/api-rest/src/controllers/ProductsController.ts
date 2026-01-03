@@ -1,4 +1,6 @@
 import { Request, Response } from "express";
+import { AppError } from "../utils/AppError";
+import { z } from "zod";
 export class ProductsController {
   /**
    * index - GET /products para listar todos os produtos
@@ -11,13 +13,24 @@ export class ProductsController {
   index(request: Request, response: Response) {
     // /products?page=1&limit=10
     const { page, limit } = request.query;
+
     response.send(`pagina ${page} de ${limit}`);
   }
 
   create(request: Request, response: Response) {
-    const { name, price } = request.body;
-    throw new Error("Erro ao tentar criar um produto");
-    // response.send(`Produto '${name}' criado com sucesso. valor: ${price}`);
+    const bodySchema = z.object({
+      name: z
+        .string({ required_error: "name is required" })
+        .trim()
+        .min(6, { message: "Name must be 6 or more characters" }),
+      price: z
+        .number({ required_error: "price is required" })
+        .positive({ message: "Price must be positive" })
+        .gte(10),
+    });
+
+    const { name, price } = bodySchema.parse(request.body);
+
     response.status(201).json({ name, price, user_id: request.user_id });
   }
 }
