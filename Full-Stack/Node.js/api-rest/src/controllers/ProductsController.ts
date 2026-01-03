@@ -18,21 +18,13 @@ export class ProductsController {
   }
 
   create(request: Request, response: Response) {
-    const { name, price } = request.body;
-    // throw new AppError("Erro ao tentar criar um produto!");
-    // response.send(`Produto '${name}' criado com sucesso. valor: ${price}`);
-    if (!name) {
-      throw new AppError("Nome do produto é obrigatório");
-    }
-    if (name.trim().Length < 6) {
-      throw new AppError("Nome do produto requer no minimo 6 caracters");
-    }
-    if (!price) {
-      throw new AppError("preço do produto é obrigatório");
-    }
-    if (price < 0) {
-      throw new AppError("preço do produto nao pode ser menor do que 0");
-    }
+    const bodySchema = z.object({
+      name: z.string(),
+      price: z.number(),
+    });
+
+    const {name, price} = bodySchema.parse(request.body)
+
     response.status(201).json({ name, price, user_id: request.user_id });
   }
 }
