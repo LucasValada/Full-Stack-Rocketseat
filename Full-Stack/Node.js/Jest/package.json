@@ -1,0 +1,13 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "author": "Lucas Valadao",
+  "license": "ISC",
+  "dependencies": {
+    "tsx": "^4.19.1"
+  }
+}
