@@ -1,0 +1,20 @@
+{
+  "name": "rocket-log",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": " tsx watch src/server.ts"
+  },
+  "author": "Lucas Valadão",
+  "license": "ISC",
+  "description": "Api de entregas de encomendas com Node, express, typescript, prisma, zod, postgres, auth, autorization e testes E2E",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.14.12",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
