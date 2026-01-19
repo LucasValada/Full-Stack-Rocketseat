@@ -7,7 +7,7 @@
   },
   "author": "Lucas Valadão",
   "license": "ISC",
-  "description": "Api de entregas de encomendas com Node, express, typescript, prisma, zod, postgres, auth, autorization e testes E2E",
+  "description": "Api de entregas de encomendas com Node, express, typescript, prisma, zod, Docker, postgres, auth, autorization e testes E2E",
   "dependencies": {
     "express": "^4.19.2",
     "express-async-errors": "^3.1.1",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^20.14.12",
+    "prisma": "^5.19.1",
     "tsx": "^4.16.2",
     "typescript": "^5.5.4"
   }
