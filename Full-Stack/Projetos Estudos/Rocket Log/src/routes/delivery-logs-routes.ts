@@ -14,4 +14,11 @@ deliveryLogsRoutes.post(
   deliveryLogsController.create,
 );
 
+deliveryLogsRoutes.get(
+  "/:delivery_id/show",
+  ensureAuthenticated,
+  verifyUserAuthorization(["sale", "customer"]), // users com papel "sale" ou "customer" podem ver os logs de entrega
+  deliveryLogsController.show,
+);
+
 export { deliveryLogsRoutes };
