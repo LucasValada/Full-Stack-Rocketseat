@@ -1,0 +1,191 @@
+# 🚀 Rocket Log
+
+API para gerenciamento de entregas de encomendas, desenvolvida com **Node.js**, **TypeScript** e foco em boas práticas de arquitetura, validação, autenticação e testes.
+
+O objetivo do projeto é simular um sistema de logística com controle de acesso, rastreabilidade de eventos e regras de negócio reais, cobrindo desde autenticação e autorização até regras de negócio e testes E2E.
+
+---
+
+## 📌 Visão Geral
+
+O **Rocket Log** é uma API REST que permite:
+
+- Cadastro e autenticação de usuários
+- Controle de acesso por autorização
+- Gerenciamento de entregas de encomendas
+- Validação de dados de entrada
+- Persistência em banco de dados relacional
+- Testes de (E2E)
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- **Node.js**
+- **TypeScript**
+- **Express**
+- **Prisma ORM**
+- **PostgreSQL**
+- **Zod** (validação de dados)
+- **JWT** (autenticação)
+- **Bcrypt** (hash de senhas)
+- **Docker**
+- **Testes E2E**
+
+---
+
+## 🏗️ Arquitetura e Conceitos Aplicados
+
+- Separação clara entre autenticação e autorização
+- Controle de acesso baseado em papéis (RBAC)
+- Regras de **ownership** para acesso a recursos
+- Validação de dados na borda da aplicação com Zod
+- Tratamento centralizado de erros
+- **Event history** para entregas (logs por mudança de status)
+- Uso de códigos de status HTTP semânticos
+
+Cada alteração de status de uma entrega gera automaticamente um **registro de log**, permitindo rastreabilidade completa do ciclo de vida da encomenda.
+
+---
+
+## ⚙️ Requisitos
+
+- Node.js (versão recomendada: LTS)
+- Docker e Docker Compose
+
+> O projeto já conta com **Docker Compose** para subir a aplicação e o banco de dados PostgreSQL.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### Opção 1: Executar com Docker (recomendado)
+
+```bash
+docker-compose up -d
+```
+
+Esse comando irá subir:
+
+- Banco de dados PostgreSQL
+- Ambiente da aplicação
+
+### Opção 2: Executar localmente
+
+#### 1. Clone o repositório
+
+```bash
+git clone <https://github.com/LucasValada/Full-Stack-Rocketseat/tree/main/Full-Stack/Projetos%20Estudos/Rocket%20Log>
+cd rocket-log
+```
+
+#### 2. Instale as dependências
+
+```bash
+npm install
+```
+
+#### 3. Configure as variáveis de ambiente
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/rocketlog?schema=public
+JWT_SECRET=your_secret_key
+```
+
+#### 4. Execute as migrations
+
+```bash
+npx prisma migrate dev
+```
+
+#### 5. Inicie a aplicação
+
+```bash
+npm run dev
+```
+
+A API estará disponível em:
+
+```
+http://localhost:3333
+```
+
+---
+
+## 🧪 Testes
+
+O projeto conta com **testes E2E**, garantindo que os principais fluxos da aplicação funcionem como esperado.
+
+```bash
+npm run test:dev
+```
+
+---
+
+## 📄 Documentação da API
+
+### 🔐 Autenticação
+
+A API utiliza autenticação baseada em **JWT (Bearer Token)**.
+
+O fluxo padrão é:
+
+1. Criação de usuário
+2. Autenticação via sessão
+3. Geração de token JWT
+4. Consumo de rotas protegidas
+
+### 🛂 Autorização
+
+O acesso aos recursos é controlado por regras de negócio, não apenas por middleware genérico.
+
+Papéis existentes:
+
+- **CUSTOMER**
+  - Pode criar entregas
+  - Pode visualizar apenas as próprias entregas
+
+- **SALE**
+  - Pode criar entregas
+  - Pode visualizar entregas de outros usuários
+
+A API valida permissões e ownership antes de retornar qualquer dado sensível.
+
+### 📦 Entregas e Logs
+
+- Cada entrega possui um **status atual**
+- Cada mudança de status gera um **log associado**
+- Os logs permitem auditar o histórico completo da entrega
+
+### ❗ Tratamento de Erros
+
+- Erros de validação são tratados com mensagens claras
+- Cada cenário retorna um **status code HTTP apropriado**
+- Campos obrigatórios são validados antes da execução das regras de negócio
+
+---
+
+## 🖼️ Screenshots
+
+> ![Criando user com role de sale](./src/assets/criando-user.png)
+> ![Obtendo o token](./src/assets/token.png)
+> ![Criando um pedido com a role de sale](./src/assets/criando-user.png)
+> ![Listando os produtos do usuario](./src/assets/list-pedido.png)
+> ![Atualizando status do pedido](./src/assets/att-status.png)
+> ![Listando o pedido com status e hora da atualização](./src/assets/show-att-product.png)
+> ![Validação de um pedido com status de "já entregue", podendo alterar o status no body](./src/assets/validation.png)
+> ![Listando o histórico de atualizações do pedido](./src/assets/logs.png)
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Lucas Valadão**.
+
+---
+
+## 📜 Licença
+
+Este projeto está sob a licença ISC.
